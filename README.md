@@ -12,10 +12,11 @@
 - Timer updates with song progress
 
 <br> 
-<h3> Todo <h3> 
-<li> Implement next/prev song </li>
-<li> Have a global array of 2-3 podcasts to make page dynamic </li>
-<li> Fix Jumping slider </li>
+<h3> Todo </h3> 
+
+* Implement next/prev song </li>
+* Have a global array of 2-3 podcasts to make page dynamic </li>
+* Fix Jumping slider </li>
 
 <br>
 
