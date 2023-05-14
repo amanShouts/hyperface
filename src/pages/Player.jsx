@@ -42,7 +42,7 @@ export function Player({ }) {
 
         let audio_duration = event.target.duration
         let movePercent = Math.floor(+currentTimeNumber / +audio_duration * 100)
-        console.log(audio_duration, movePercent)
+        // console.log(audio_duration, movePercent)
 
         let audio_input_id = inputRef.current.id
         document.querySelector(`#${audio_input_id}`).value = movePercent

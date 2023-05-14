@@ -91,7 +91,7 @@ export function App() {
             <p>Listen to audio versions of top web articles</p>
           </div>
 
-          <div className='course_page_course_carousel'>
+          <div className='course_page_course_carousel' onClick={() => { openPlayer() }}>
             {/* carousel  */}
             <SimpleSlider />
           </div>
@@ -109,7 +109,7 @@ export function App() {
             <p>Listen to audio versions of tweet threads</p>
           </div>
 
-          <div className='course_page_course_carousel'>
+          <div className='course_page_course_carousel' onClick={() => { openPlayer() }}>
             {/* carousel  */}
             <SimpleSlider />
           </div>
