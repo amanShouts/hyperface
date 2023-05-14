@@ -24,7 +24,7 @@ Click on first carousel row to move to the player(second) page
 
 <br>
 
-<a href="https://vercel.com/amanshouts/hyperface" > <h3> Live on Vercel </h3> </a>
+<a href="https://vercel.com/amanshouts/hyperface" > Live on Vercel </a>
 
-<a href="https://harmonious-babka-17de97.netlify.app/" > <h3> Live on Netlify </h3> </a>
+<a href="https://harmonious-babka-17de97.netlify.app/" >  Live on Netlify <a>
 
