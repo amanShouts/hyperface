@@ -4,7 +4,7 @@ import { BsShare, BsChevronDown, BsPauseCircle, BsBook, BsFillPlayFill } from 'r
 import { AiOutlineVerticalLeft, AiOutlineVerticalRight, AiOutlineFastBackward, AiOutlineFastForward } from 'react-icons/ai'
 import { useEffect, useState, useRef } from "react";
 
-export function Player({ }) {
+export function Player() {
 
     const { id } = useParams(); // not use right now, can use to route later 
 
@@ -98,7 +98,7 @@ export function Player({ }) {
             <div className="player_song_icons">
                 <AiOutlineVerticalLeft size={30} onClick={() => nextSong(-1)} />
                 <AiOutlineFastBackward size={35} onClick={() => { doFastForward(-15) }} />
-                {played == true ? <BsPauseCircle size={65} onClick={togglePlay} /> : <BsFillPlayFill size={65} onClick={togglePlay} />}
+                {played === true ? <BsPauseCircle size={65} onClick={togglePlay} /> : <BsFillPlayFill size={65} onClick={togglePlay} />}
                 <AiOutlineFastForward size={35} onClick={() => { doFastForward(15) }} />
                 <AiOutlineVerticalRight size={30} onClick={() => nextSong(1)} />
             </div>

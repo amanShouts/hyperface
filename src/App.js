@@ -7,6 +7,7 @@ export function App() {
 
   const navigate = useNavigate()
 
+  // courses and articles array to make this page dynamic in future. will either read data from this array or global context API
   const courses = [
     {
 
