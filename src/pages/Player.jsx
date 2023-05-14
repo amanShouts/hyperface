@@ -36,11 +36,16 @@ export function Player({ }) {
         const minutes = Math.floor(event.target.currentTime / 60);
         const seconds = Math.floor(event.target.currentTime - minutes * 60);
         // const currentTime = str_pad_left(minutes, '0', 2) + ':' + str_pad_left(seconds, '0', 2);
+        const currentTimeNumber = event.target.currentTime
+
         const currentTime = minutes + " : " + seconds
 
-        let audio_input = inputRef.current.id
-        console.log(audio_input)
-        document.querySelector(`#${audio_input}`).value = currentTime
+        let audio_duration = event.target.duration
+        let movePercent = Math.floor(+currentTimeNumber / +audio_duration * 100)
+        console.log(audio_duration, movePercent)
+
+        let audio_input_id = inputRef.current.id
+        document.querySelector(`#${audio_input_id}`).value = movePercent
 
         setCurrentSeektime(currentTime)
     }
@@ -59,6 +64,7 @@ export function Player({ }) {
             document.querySelector(`#${playerId}`).currentTime = +document.querySelector(`#${playerId}`).currentTime - 15
         }
     }
+
     return (
         <div className="player_main">
             <div className="player_icons_row1">
@@ -81,7 +87,7 @@ export function Player({ }) {
                     <audio id="my_audio" src={require("../lightness_of_being.mp3")} ref={playerRef} onTimeUpdate={(e) => { setSeekBar(e) }}></audio>
                 </div>
                 <div className="player_song_bar">
-                    <input type="range" min="1" max="1000" value="10" ref={inputRef} id="audio_seek_bar" />
+                    <input type="range" min="1" max="100" value="10" ref={inputRef} id="audio_seek_bar" />
                 </div>
                 <div className="player_song_time">
                     <span>{current_seek_time}</span>
