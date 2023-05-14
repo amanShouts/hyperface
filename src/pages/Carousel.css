@@ -1,0 +1,36 @@
+.carousel_main{
+
+    margin-left: -50px;
+}
+
+.carousel_div{
+  
+}
+
+.carousel_div > img {
+    border-radius: 5px;
+    width : 280px;
+    height: 160px;
+   
+}
+
+.carousel_div > h3{
+    font-size: 16px;
+    font-weight: 800;
+    margin-top : 5px;
+}
+
+.carousel_div > p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -13px;
+}
+
+.carousel_div > p > span{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+    margin-right: 10px;
+}
+
