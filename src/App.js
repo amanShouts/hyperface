@@ -33,7 +33,8 @@ export function App() {
   ]
 
   function openPlayer() {
-    navigate("/player/5")
+    navigate("/player/4")
+    // changeMyPlayerDetails() // call back func
   }
 
   return (
@@ -48,7 +49,7 @@ export function App() {
           </div>
 
           <div className='course_page_profile'>
-            <img className='profile_pic' src={require("./Aman_Singh_Photo.png")} alt="profile pic" />
+            <img className='profile_pic' src={require("./images/Aman_Singh_Photo.png")} alt="profile pic" />
           </div>
 
         </div>

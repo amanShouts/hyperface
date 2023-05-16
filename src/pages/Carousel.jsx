@@ -19,22 +19,22 @@ export function SimpleSlider() {
         <Slider {...settings} className="carousel_main">
 
             <div className="carousel_div">
-                <img src={require("../content_course.png")} alt="content writing" />
+                <img src={require("../images/content_course.png")} alt="content writing" />
                 <h3>Fundamentals of Product Design</h3>
                 <p> <span> 8 Chapters </span> <span> . </span><span> 2 hours</span> </p>
             </div>
             <div className="carousel_div">
-                <img src={require("../content_course2.jpg")} alt="content writing" />
+                <img src={require("../images/content_course2.jpg")} alt="content writing" />
                 <h3>Fundamentals of Product Design</h3>
                 <p> <span> 8 Chapters </span> <span>.</span> <span> 2 hours</span> </p>
             </div>
             <div className="carousel_div">
-                <img src={require("../content_course3.jpg")} alt="content writing" />
+                <img src={require("../images/content_course3.jpg")} alt="content writing" />
                 <h3>Fundamentals of Product Design</h3>
                 <p> <span> 8 Chapters </span> <span>.</span> <span> 2 hours</span> </p>
             </div>
             <div className="carousel_div">
-                <img src={require("../content_course4.jpg")} alt="content writing" />
+                <img src={require("../images/content_course4.jpg")} alt="content writing" />
                 <h3>Fundamentals of Product Design</h3>
                 <p> <span> 8 Chapters </span> <span>.</span> <span> 2 hours</span> </p>
             </div>
